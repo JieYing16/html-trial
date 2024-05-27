@@ -20,10 +20,11 @@
                     }
 
                     function moveButton() {
-                        var x = Math.random() * (window.innerWidth - document.getElementbyId('noButton').offsetWidth) - 85;
-                        var y = Math.random() * (window.innerHeight - document.getElementbyId('noButton).offsetHeight) - 48;
-                        document.getElementbyId('noButton').style.left = `${x}px`;
-                        document.getElementbyId('noButton').style.top = `${y}px`;
+                        var noButton = document.getElementById('noButton');
+                        var x = Math.random() * (window.innerWidth - noButton.offsetWidth) - 85;
+                        var y = Math.random() * (window.innerHeight - noButton.offsetHeight) - 48;
+                        noButton.style.left = `${x}px`;
+                        noButton.style.top = `${y}px`;
                     }
                 </script>
             </div>
